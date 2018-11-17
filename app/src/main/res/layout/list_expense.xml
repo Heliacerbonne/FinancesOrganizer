@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/toEx"
+        android:layout_width="114dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="7dp"
+        android:background="#daadf1"
+        android:onClick="showDatePickerDialog"
+        android:text="To : Date"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/lvEx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fromEx"
+        app:layout_constraintTop_toBottomOf="@+id/listExTitle" />
+
+    <Button
+        android:id="@+id/fromEx"
+        android:layout_width="114dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="7dp"
+        android:background="#daadf1"
+        android:onClick="showDatePickerDialog"
+        android:text="From : Date"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/lvEx"
+        app:layout_constraintEnd_toStartOf="@+id/toEx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listExTitle" />
+
+    <TextView
+        android:id="@+id/listExTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginRight="81dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="8dp"
+        android:text="List of Expenses"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/lvEx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backEx"
+        android:layout_width="122dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="94dp"
+        android:layout_marginStart="24dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/seeIncomes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/seeIncomes"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_purple"
+        android:text="see Incomes"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backEx"
+        app:layout_constraintTop_toBottomOf="@+id/txtEx" />
+
+    <TextView
+        android:id="@+id/txtEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="89dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="16dp"
+        android:text="Total : no expenses"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/backEx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listExTitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ListView
+        android:id="@+id/lvEx"
+        android:layout_width="370dp"
+        android:layout_height="330dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listExTitle" />
+
+
+</android.support.constraint.ConstraintLayout>

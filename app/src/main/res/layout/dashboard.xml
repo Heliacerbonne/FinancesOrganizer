@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleDash"
+        android:layout_width="149dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginRight="117dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="16dp"
+        android:text="Dashboard"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031"
+        android:textColor="@android:color/holo_purple" />
+
+    <TextView
+        android:id="@+id/helloTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="8dp"
+        android:text="Hello, username !"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleDash" />
+
+    <Button
+        android:id="@+id/incomeBtn"
+        android:layout_width="169dp"
+        android:layout_height="139dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="32dp"
+        android:text="Add new income"
+        app:layout_constraintBottom_toTopOf="@+id/expenseBtn"
+        app:layout_constraintEnd_toStartOf="@+id/seeIn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helloTxt"
+        android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/expenseBtn"
+        android:layout_width="167dp"
+        android:layout_height="138dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Add new expense"
+        app:layout_constraintBottom_toTopOf="@+id/totalTxt"
+        app:layout_constraintEnd_toStartOf="@+id/seeEx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incomeBtn"
+        android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/totalTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginRight="125dp"
+        android:layout_marginStart="128dp"
+        android:text="Total : amount €"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expenseBtn" />
+
+    <Button
+        android:id="@+id/seeIn"
+        android:layout_width="167dp"
+        android:layout_height="139dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="32dp"
+        android:text="See Incomes"
+        app:layout_constraintBottom_toTopOf="@+id/seeEx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/incomeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/helloTxt"
+        android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/seeEx"
+        android:layout_width="166dp"
+        android:layout_height="137dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="see Expenses"
+        app:layout_constraintBottom_toTopOf="@+id/totalTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/expenseBtn"
+        app:layout_constraintTop_toBottomOf="@+id/seeIn"
+        android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white" />
+</android.support.constraint.ConstraintLayout>
